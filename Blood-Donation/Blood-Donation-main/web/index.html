@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registration Form</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+            }
+
+            .container {
+                width: 400px; /* Adjust width as needed */
+                margin: 0 auto;
+                border: 1px solid #ccc;
+                padding: 20px;
+                border-radius: 5px;
+            }
+
+            h1 {
+                text-align: center;
+                margin-bottom: 20px;
+                /*text-decoration: underline;*/
+            }
+            
+            h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                text-decoration: underline;
+            }
+
+            .field {
+                margin-bottom: 15px;
+            }
+
+            label {
+                /*display: block;*/
+                margin-bottom: 5px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"]{
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                font-size: 16px;
+            }
+
+            button {
+                background-color: #4caf50; /* Green */
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer; /* Indicate clickable button */
+            }
+
+            button:hover {
+                opacity: 0.8; /* Add hover effect */
+            }
+
+            select {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Jai Parkash Mukand Lal Innovative Engineering & Technology Institute, Radaur</h1>
+        <h2>REGISTRATION FORM FOR BLOOD DONATION</h2>
+        <div class="container">
+        <h2>Enter Details</h2>
+        <form action="register" method="post"> 
+            <div class="field">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="field">
+                <label for="mobileno">Phone number:</label>
+                <input type="tel" id="mobileno" name="mobileno" placeholder="Enter your phone number" required>
+            </div>
+            
+            <div>
+                <label for="name">Post: </label><br>
+                <input type="radio" id="student" name="post" value="student">
+                <label for="student">Student</label><br>
+                <input type="radio" id="Teaching" name="post" value="Teaching">
+                <label for="Teaching">Teaching</label><br>
+                <input type="radio" id="Non-Teaching" name="post" value="Non-Teaching">
+                <label for="Non-Teaching">Non-Teaching</label><br>
+                <input type="radio" id="guest" name="post" value="guest">
+                <label for="guest">Guest</label>
+            </div>
+            <br>
+            <div class="field">
+                <label for="branch">Branch:</label>
+                <input type="text" id="branch" name="branch" placeholder="Enter your Branch">
+            </div>
+            <div class="field">
+                <label for="year">Year:</label>
+                <input type="text" id="year" name="year" placeholder="Enter your Year">
+            </div>
+            
+            <div>
+                <label for="name">Gender: </label><br>
+                <input type="radio" id="Male" name="gender" value="Male">
+                <label for="Male">Male</label><br>
+                <input type="radio" id="Female" name="gender" value="Female">
+                <label for="Female">Female</label>
+            </div><br>
+            <div class="field">
+                <label for="name">Blood Group:</label>
+                <input type="text" id="bloodgroup" name="bloodgroup" placeholder="Enter your Blood Group">
+            </div>
+            <div>
+                <label for="name">Blood Bank: </label><br>
+                <input type="radio" id="PGI" name="bloodbank" value="PGI">
+                <label for="PGI">PGI</label><br>
+                <input type="radio" id="RedCross" name="bloodbank" value="RedCross">
+                <label for="RedCross">RedCross</label>
+            </div><br>
+            
+            <label for="address">Enter Address: </label>
+            <input type="text" id="address" name="address" placeholder="Enter your Address" required><br><br>
+            <br>
+            <center><button type="submit">Register</button></center>
+        </form>
+        </div>
+    </body>
+</html>
